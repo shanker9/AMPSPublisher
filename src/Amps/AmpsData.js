@@ -1,7 +1,8 @@
 import React from 'react';
 import * as Amps from 'amps';
 
-var ampsServerUri = "ws://192.168.2.119:9008/amps/json";
+// var ampsServerUri = "ws://192.168.2.119:9008/amps/json";
+var ampsServerUri = "ws://182.71.244.27:9008/amps/json";
 var ampsClient = new Amps.Client('randomPublisher');
 var shouldDisconnect = false;
 var i=0;
@@ -64,7 +65,7 @@ export default class AmpsData {
         // let dataFire = setInterval(()=>{
         let publishedData = [];
         let iterData;
-        let j = i + 500;
+        let j = i + 5000;
         var counterParty = ["Goldman Sachs", "Bank of America", "JP Morgan", "PIMCO", "Bridgewater", "Morgan Stanley", "General Electric",
             "General Motors", "Deutsche Bank", "Fidelity"];
         var interest = ["2.5", "3", "4.5", "5.6", "3.3", "6.5", "2.3", "3.4", "4.2", "3.2"];
